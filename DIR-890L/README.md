@@ -1,4 +1,3 @@
-
 # Information
 
 **Vendor of the products:**    D-Link
@@ -13,7 +12,7 @@
 
 # Summarize
 
-The LAN-side Web-Configuration Interface has Stack-based Buffer Overflow vulnerability in the `D-Link` Wi-Fi router firmware `DIR-890L`(version less than `1.07`).
+The LAN-side Web-Configuration Interface has Stack-based Buffer Overflow vulnerability in the `D-Link` Wi-Fi router firmware `DIR-890L`(version less than `1.07`). 
 
 The function created at `0x17958` of `/htdocs/cgibin` will call `sprintf` without checking the length of strings in parameters given by `HTTP header` and can be controlled by users easily.
 
@@ -25,7 +24,11 @@ The vulnerability is detected at `/htdocs/cgibin`.
 
 There is a `Stack-based Buffer Overflow vulnerability` in the function created at `0x17A60`. When we use `UNSUBSCRIBE` request, it will call the `sub_17958` function which created at `0x17958`.
 
+![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/1-1.jpg)
+
 However, in the `sub_17958` function, it will call `sprintf` without checking the length of `v2`, which causes the `stack overflow`. The `v2` here is `SID` parameter given by `HTTP header`.
+
+![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/1-2.jpg)
 
 # Poc
 
@@ -66,6 +69,12 @@ system("telnet 192.168.0.1 23")
 
 Scan ports before exploit the vulnerability.
 
+![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/2-1.jpg)
+
 Exploit the vulnerability and get shell successfully.
 
+![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/2-2.jpg)
+
 Scan ports again and we can dectect that the port `23` which represents `Telnet` service has been opened.
+
+![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/2-3.jpg)
