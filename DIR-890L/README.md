@@ -4,7 +4,7 @@
 
 **Reported by:**    WangJincheng(<wjcwinmt@outlook.com>) && FeiXincheng(<FXC030618@outlook.com>)
 
-**Affected products:**    D-Link DIR-890L <= v1.07
+**Affected products:**    D-Link DIR-890L <= v1.07B09
 
 **Vendor Homepage:**    [https://www.dlink.com](https://www.dlink.com "https://www.dlink.com")
 
