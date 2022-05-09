@@ -67,6 +67,8 @@ system("telnet 192.168.0.1 23")
 
 # Get Shell
 
+![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/2-0.jpg)
+
 Scan ports before exploit the vulnerability.
 
 ![image](https://github.com/winmt/CVE/blob/main/DIR-890L/pic/2-1.jpg)
