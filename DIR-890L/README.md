@@ -12,11 +12,11 @@
 
 # Summarize
 
-The LAN-side Web-Configuration Interface has Stack-based Buffer Overflow vulnerability in the `D-Link` Wi-Fi router firmware `DIR-890L`(version less than `1.07`). 
+The LAN-side Web-Configuration Interface has Stack-based Buffer Overflow vulnerability in the `D-Link` Wi-Fi router firmware `DIR-890L`(version less than or equal to `1.07`). 
 
 The function created at `0x17958` of `/htdocs/cgibin` will call `sprintf` without checking the length of strings in parameters given by `HTTP header` and can be controlled by users easily.
 
-The attackers can exploit the vulnerability to carry out arbitrary code through sending a specially constructed payload to port `49152`.
+The attackers can exploit the vulnerability to carry out arbitrary code by means of sending a specially constructed payload to port `49152`.
 
 # Vulnerability Description
 
