@@ -8,8 +8,6 @@
 
 **Vendor Homepage:**    [https://www.dlink.com](https://www.dlink.com "https://www.dlink.com")
 
-**Vendor Advisory:**     [https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10299](https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10299 "https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10299")
-
 # Overview
 
 The LAN-side Web-Configuration Interface has `Stack-based Buffer Overflow vulnerability` in the `D-Link` Wi-Fi router firmware `DIR-890L DIR890LA1_FW107b09.bin` and previous versions. 
