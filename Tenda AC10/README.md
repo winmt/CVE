@@ -14,7 +14,7 @@
 
 # Overview
 
-Attacker can inject evil command into parameter `lanIp` which will be passed as a part of an argument to `doSystemCmd` and execute arbitrary commands to control the Router.
+`Tenda AC10` has a remote code execution vulnerability. Attacker can inject evil command into parameter `lanIp` which will be passed as a part of an argument to `doSystemCmd` and execute arbitrary commands to control the Router.
 
 # Vulnerability details
 
