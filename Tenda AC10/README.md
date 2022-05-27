@@ -14,21 +14,21 @@
 
 # Overview
 
-`Tenda AC10` has a remote code execution vulnerability. Attacker can inject evil command into parameter `lanIp` which will be passed as a part of an argument to `doSystemCmd` and execute arbitrary commands to control the Router.
+`Tenda AC10` has a remote code execution vulnerability. Attackers can inject evil command into parameter `lanIp` which will be passed as a part of an argument to `doSystemCmd` and execute arbitrary commands to control the Router.
 
 # Vulnerability details
 
 The vulnerability is detected at `/bin/httpd`.
 
-In the `TendaTelnet` function, the function called `GetValue` gets the value of the key `lan.ip` and then store it to a local variable called `lan_ip`. Then, the variable `lan_ip` and the `telnetd -b %s &` is passed as an argument to `doSystemCmd`.
+In the `TendaTelnet` function, the function called `GetValue` gets the value of the key `lan.ip` and then stores it to a local variable called `lan_ip`. Then, the variable `lan_ip` and the string `telnetd -b %s &` is passed as an argument to `doSystemCmd`.
 
 ![image](https://github.com/winmt/CVE/blob/main/Tenda%20AC10/pic/1.jpg)
 
-We found that we can set the value of the key `lan.ip` by calling function `fromAdvSetLanip`. `lan_ip` is got from parameter `lanIp` sent by `POST` request and it will be set as the value of the key `lan.ip` with function `SetValue`.
+We found that we can set the value of the key `lan.ip` by calling function `fromAdvSetLanip`. The variable `lan_ip` here is got from parameter `lanIp` sent by `POST` request and it will be set as the value of the key `lan.ip` with function `SetValue`.
 
 ![image](https://github.com/winmt/CVE/blob/main/Tenda%20AC10/pic/2.jpg)
 
-Above all, attacker can inject evil command into parameter `lanIp` which will be passed as a part of an argument to `doSystemCmd` and execute arbitrary commands to control the Router.
+Above all, attackers can inject evil command into parameter `lanIp` which will be passed as a part of an argument to `doSystemCmd` and execute arbitrary commands to control the Router.
 
 # Exploit vulnerability
 
