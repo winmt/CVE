@@ -8,9 +8,9 @@
 
 **Affected products:**    [TOTOLINK EX300_V2](http://www.totolink.cn/home/menu/newstpl.html?menu_newstpl=products&id=55 "http://www.totolink.cn/home/menu/newstpl.html?menu_newstpl=products&id=55")
 
-**Affected firmware version:**    V4.0.3c.7484
+**Affected firmware version:**  V4.0.3c.7484
 
-**Firmware download address:**    [http://www.totolink.cn/data/upload/20210720/b351052836a4fc7e1575dc513afc02b1.zip](http://www.totolink.cn/data/upload/20210720/b351052836a4fc7e1575dc513afc02b1.zip "http://www.totolink.cn/data/upload/20210720/b351052836a4fc7e1575dc513afc02b1.zip")
+**Firmware download address:**  [http://www.totolink.cn/data/upload/20210720/b351052836a4fc7e1575dc513afc02b1.zip](http://www.totolink.cn/data/upload/20210720/b351052836a4fc7e1575dc513afc02b1.zip "http://www.totolink.cn/data/upload/20210720/b351052836a4fc7e1575dc513afc02b1.zip")
 
 # Overview
 
