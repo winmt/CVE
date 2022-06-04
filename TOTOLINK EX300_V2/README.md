@@ -46,7 +46,7 @@ client.publish("totolink/router/setLanguageCfg", '{"langType": "$(telnetd -l /bi
 
 At first, we run the above script to exploit the vulnerability.
 
-Then, we scan ports again and dectect that the port `23` which represents `Telnet service` has been opened.
+Then, we scan ports and dectect that the port `23` which represents `Telnet service` has been opened.
 
 ![image](https://github.com/winmt/CVE/blob/main/TOTOLINK%20EX300_V2/pic/2.jpg)
 
