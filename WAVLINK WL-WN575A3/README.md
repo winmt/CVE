@@ -65,7 +65,7 @@ wlan_conf=2860
 
 # Review Vulnerabilities
 
-At first, we found that the page `/data.html` does not exist.
+At first, we confirm that the page `/data.html` does not exist.
 
 ![image](https://github.com/winmt/CVE/blob/main/WAVLINK%20WL-WN575A3/pic/1.jpg)
 
