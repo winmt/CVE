@@ -38,7 +38,7 @@ In the function `ftext`, we find that when bypassing the check of `wlan_conf` an
 
 ![image](https://github.com/winmt/CVE/blob/main/WAVLINK%20WL-WN575A3/pic/8.jpg)
 
-In the function `obtw`, the program uses function `web_get` to obtain the content of parameter `obtw_enable` , `CCK_1M` , `CCK_5M` , `OFDM_6M` , `OFDM_12M` , `HT20_MCS_0` , `HT20_MCS_1_2` , `HT40_MCS_0` , `HT40_MCS_32` and `HT40_MCS_1_2` which are sent by `POST` request messages. Then, when `obtw_enable != 0`, the content of other parameters are formatted into a string passed as an argument to the function `do_system` which can execute system commands.
+In the function `obtw`, the program uses function `web_get` to obtain the content of parameter `obtw_enable` , `CCK_1M` , `CCK_5M` , `OFDM_6M` , `OFDM_12M` , `HT20_MCS_0` , `HT20_MCS_1_2` , `HT40_MCS_0` , `HT40_MCS_32` and `HT40_MCS_1_2` which are sent by `POST` request. Then, when `obtw_enable != 0`, the content of other parameters are formatted into a string passed as an argument to the function `do_system` which can execute system commands.
 
 ![image](https://github.com/winmt/CVE/blob/main/WAVLINK%20WL-WN575A3/pic/4.jpg)
 
