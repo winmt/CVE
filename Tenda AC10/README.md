@@ -1,3 +1,7 @@
+# CVE-ID
+
+[CVE-2022-32054](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32054 "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32054")
+
 # Information
 
 **Vendor of the products:**    Tenda
